@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Checkbox Animation.css" />
+    <title>Checkbox Animation</title>
+  </head>
+  <body>
+    <div class="box">
+      <input type="Checkbox" name="" id="check" />
+      <label>
+        <span></span>
+        Remember Me
+      </label>
+    </div>
+    <script>
+      const label = document.querySelector("label");
+      label.addEventListener("click", () => {
+        label.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
